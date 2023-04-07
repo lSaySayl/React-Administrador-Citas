@@ -1,0 +1,239 @@
+:root {
+    --fondo: #d4d8f0;
+    --fondo-tarjetas: #fffffe;
+    --titulos: #232946;
+    --botones: #eebbc3;
+    --textos: #232946;
+
+}
+
+html {
+    background-color: var(--fondo);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h1 {
+    margin-top: 40px;
+    color: var(--titulos);
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--titulos);
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+
+}
+
+
+.column:nth-child(1) {
+    border-radius: 20px;
+    transition: ease-in-out 0.5s;
+    width: 40%;
+    margin: 30px;
+
+}
+
+.column:nth-child(1) h2 {
+
+    border-radius: 20px 20px 0 0;
+}
+
+.column:nth-child(1):hover {
+    background-color: var(--fondo-tarjetas);
+}
+
+.column:nth-child(1):hover h2 {
+    background-color: var(--botones);
+
+}
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+
+}
+
+.alerta {
+    color: red;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+ 
+}
+
+.container-input {
+    position: relative;
+    width: 50%;
+
+}
+
+/* Personaliza el calendario desplegable */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 24px;
+
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    font-size: 24px;
+
+}
+
+.container-input input,
+textarea {
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--titulos);
+    outline: none;
+    margin: 25px 0;
+    background-color: transparent;
+    color: var(--textos);
+
+}
+
+
+.container-input label {
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    color: var(--textos);
+    font-weight: 600;
+}
+
+
+form button {
+    width: 300px;
+    height: 55px;
+    margin-left: 25px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--botones);
+
+}
+
+/* Card citas */
+
+.column:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    width: 40%;
+    height: 725px;
+    transition: ease-in-out 0.5s;
+    overflow-y: scroll;
+    background-color: var(--botones);
+
+}
+
+
+
+/* Estilos para la barra de desplazamiento */
+.column:nth-child(2)::-webkit-scrollbar {
+
+    width: 10px;
+    background-color: transparent;
+  }
+  
+  /* Estilos para el pulgar de la barra de desplazamiento */
+
+  .column:nth-child(2)::-webkit-scrollbar-thumb {
+    background-color: var(--botones);
+    border-radius: 100px;
+
+
+  }
+  
+  /* Estilos para el track de la barra de desplazamiento */
+
+  
+
+  
+
+
+.column:nth-child(2) h2 {
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 10px;
+    background-color:var(--fondo-tarjetas);
+ 
+}
+
+
+
+
+
+.container p {
+    font-weight: 600;
+    margin: 10px;
+}
+
+.container span {
+    font-weight: 400;
+}
+
+.btn-close {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+}
+
+.icon {
+    position: absolute;
+    bottom: 156px;
+    right: -20px;
+    padding: 5px;
+    color: var(--titulos);
+    font-size: 30px;
+
+
+
+}
+
+
+
