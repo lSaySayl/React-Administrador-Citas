@@ -24,11 +24,8 @@ Para iniciar la aplicación, sigue los siguientes pasos:
 2. Abre la terminal en la carpeta del proyecto
 3. Ejecuta el comando npm install para instalar todas las dependencias
 4. Ejecuta el comando npm start para iniciar la aplicación
-5. Abre tu navegador y ve a la dirección http://localhost:3000 para ver la aplicación en acción.
+5. Abre tu navegador y ve a la dirección http://localhost:3000 para ver la aplicación en acción.  
 
-👨‍💻 Contribuciones  
-
-Este proyecto está abierto a contribuciones y mejoras. Si deseas colaborar, puedes abrir un pull request o crear una nueva rama y hacer tus cambios allí.
 
 💻 Tecnologías utilizadas
 
@@ -37,5 +34,9 @@ Este proyecto está abierto a contribuciones y mejoras. Si deseas colaborar, pue
 - useState hook
 - useEffect hook
 - localStorage
+
+👨‍💻 Contribuciones  
+
+Este proyecto está abierto a contribuciones y mejoras. Si deseas colaborar, puedes abrir un pull request o crear una nueva rama y hacer tus cambios allí.
 
 ¡Gracias por revisar este proyecto! 🙌
